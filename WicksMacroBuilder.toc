@@ -1,8 +1,8 @@
-## Interface: 20505
+## Interface: 20505, 20506
 ## Title: Wick's Macro Builder
 ## Notes: Macro Builder for TBC Classic. Part of the Wick suite.
 ## Author: Wick
-## Version: 0.2.2
+## Version: 0.2.3
 ## SavedVariables: WICKSMACROBUILDERDB
 
 Core.lua
