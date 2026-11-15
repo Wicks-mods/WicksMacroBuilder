@@ -2,7 +2,7 @@
 ## Title: |cffD4C8A1Wick's|r |cff4FC778Macro Builder|r
 ## Notes: A clean macro editor. Build a macro from click-to-insert chips, pick an icon, drag it to your bars.
 ## Author: Wick
-## Version: 0.2.3
+## Version: 0.2.4
 ## SavedVariables: WICKSMACROBUILDERDB
 ## IconTexture: Interface\Icons\INV_Misc_Note_01
 ## Category: Wick's Mods

@@ -1,6 +1,6 @@
 # Wick's Macro Builder — Changelog
 
-## Unreleased
+## 0.2.4 (2026-11-15)
 
 - Fixed an error when saving a macro or resizing the window after a settings reset.
 - Shows in the game's addon list with an icon and the two-tone Wick title, under a Wick's Mods heading.
