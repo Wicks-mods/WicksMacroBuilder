@@ -161,7 +161,9 @@ SLASH_WSMB1 = "/wsmb"
 SlashCmdList["WSMB"] = function(msg)
     msg = (msg or ""):lower():match("^%s*(.-)%s*$")
     if msg == "reset" then
-        WICKSMACROBUILDERDB = nil
+        WICKSMACROBUILDERDB = WICKSMACROBUILDERDB or {}
+        wipe(WICKSMACROBUILDERDB)
+        for k, v in pairs(DEFAULTS) do WICKSMACROBUILDERDB[k] = v end
         print("|cff4FC778Wick's Macro Builder|r: settings reset. /reload to apply.")
         return
     end

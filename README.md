@@ -2,9 +2,54 @@
 
 # Wick's Macro Builder
 
+<!-- wick:badges:start -->
+[![Downloads](https://img.shields.io/curseforge/dt/1521208?style=flat-square&labelColor=171124&label=downloads&color=4FC778)](https://www.curseforge.com/wow/addons/wicks-macro-builder)
+![TBC Anniversary](https://img.shields.io/badge/client-TBC%20Anniversary-383058?style=flat-square&labelColor=171124)
+[![License](https://img.shields.io/badge/license-MIT%20%2B%20trademark-383058?style=flat-square&labelColor=171124)](LICENSE)
+[![Discord](https://img.shields.io/badge/discord-join-4FC778?style=flat-square&labelColor=171124)](https://discord.gg/GWGTMhYBZY)
+<!-- wick:badges:end -->
+
 > A clean macro editor for TBC Classic. Build your macro with click-to-insert chips, pick an icon, then drag it straight onto your action bars. No switching to Blizzard's macro window.
 
 Part of the **[Wick suite](https://github.com/Wicks-mods/WickSuite)**: precision addons built around a single fel-green-on-deep-purple aesthetic.
+
+## Features
+
+- **Drag macros to your action bars from inside the builder.** Right-side icon strip shows every macro in the current scope with its real icon. Click to load into the editor, drag onto any action-bar slot to equip. No more switching to `/macro`.
+- **Icon picker**: click the `?` button next to Name to pick any macro-eligible icon (`GetMacroIcons` + `GetMacroItemIcons`). Raid macros stop all looking like identical `?` icons.
+- **General tab**: one-click insertion of 20 conditionals (`@mouseover`, `@focus`, `[help]`, `[harm]`, `[mod:shift]`, `[stance:…]`, `[form:…]`, and more) and 18 slash commands (`#showtooltip`, `/cast`, `/castsequence`, `/cancelaura`, `/cancelform`, `/stopcasting`, `/use`, `/petattack`, `/focus`, and the rest). Hover any chip for a plain-English description.
+- **Class preset library**: 54 curated TBC-correct macros across all 9 classes (Cat+Dash, IF+Trinket+PoH, NS+Healing Wave, Bubblehearth, Stance-swap + ability, etc.). Click a preset to load it into the editor as a starting point.
+- **Live 255-character counter**: green → amber → red as you approach the macro cap.
+- **Smart save flow**: click an existing icon to load-and-edit-in-place, or clear and hit **Create New** to append. Mode hint strip tells you which is which.
+- **Confirmation before delete**: popup prevents mis-click nukes.
+- **Global and Per-Character scope**: toggle at the top of the icon strip.
+- **Resizable**: BOTTOMRIGHT fel-green bracket doubles as the grip; chips, presets, and editor reflow.
+
+## Install
+
+- **CurseForge:** [curseforge.com/wow/addons/macro-builder](https://www.curseforge.com/wow/addons/macro-builder)
+- **Manual:** download the latest ZIP from [Releases](https://github.com/Wicks-mods/WicksMacroBuilder/releases) and extract the `WicksMacroBuilder` folder into `World of Warcraft\_classic_\Interface\AddOns\`.
+
+## Usage
+
+```
+/wsmb
+```
+
+Opens the builder. Drag the header to move, drag the BOTTOMRIGHT fel-green bracket to resize. Click chips to insert snippets at the cursor; click preset names to load a full macro body; click an icon in the right strip to load an existing macro; drag an icon from the strip onto your action bar.
+
+## Compatibility
+
+- **TBC Classic (Burning Crusade / Anniversary)**: Interface `20505`.
+
+## Brand
+
+Uses the locked Wick palette and 10px/2px fel-green L-bracket chrome. See:
+- `UI.lua`: tokens at the top of the file
+- `CHANGELOG.md`: version history
+- `logo.svg`: logomark source
+
+## More from Wick
 
 <!-- wick:suite-table:start -->
 | Addon | GitHub | CurseForge |
@@ -27,46 +72,11 @@ Part of the **[Wick suite](https://github.com/Wicks-mods/WickSuite)**: precision
 | **Wick's Demons and Things** | [repo](https://github.com/Wicks-mods/WicksDemonsAndThings) | [CurseForge](https://www.curseforge.com/wow/addons/wicks-demons-and-things) |
 | **Wick's UI** | [repo](https://github.com/Wicks-mods/WicksUIForever) | [CurseForge](https://www.curseforge.com/wow/addons/wicks-ui) |
 | **Wick's Reminders** | [repo](https://github.com/Wicks-mods/WicksReminders) | [CurseForge](https://www.curseforge.com/wow/addons/wicks-reminders) |
+| **Wick's Map** | [repo](https://github.com/Wicks-mods/WicksMap) | [CurseForge](https://www.curseforge.com/wow/addons/wicks-map) |
 
 **Community:** [Discord](https://discord.gg/GWGTMhYBZY)
 <!-- wick:suite-table:end -->
 
-## Features
-
-- **Drag macros to your action bars from inside the builder.** Right-side icon strip shows every macro in the current scope with its real icon. Click to load into the editor, drag onto any action-bar slot to equip. No more switching to `/macro`.
-- **Icon picker** — click the `?` button next to Name to pick any macro-eligible icon (`GetMacroIcons` + `GetMacroItemIcons`). Raid macros stop all looking like identical `?` icons.
-- **General tab** — one-click insertion of 20 conditionals (`@mouseover`, `@focus`, `[help]`, `[harm]`, `[mod:shift]`, `[stance:…]`, `[form:…]`, and more) and 18 slash commands (`#showtooltip`, `/cast`, `/castsequence`, `/cancelaura`, `/cancelform`, `/stopcasting`, `/use`, `/petattack`, `/focus`, and the rest). Hover any chip for a plain-English description.
-- **Class preset library** — 54 curated TBC-correct macros across all 9 classes (Cat+Dash, IF+Trinket+PoH, NS+Healing Wave, Bubblehearth, Stance-swap + ability, etc.). Click a preset to load it into the editor as a starting point.
-- **Live 255-character counter** — green → amber → red as you approach the macro cap.
-- **Smart save flow** — click an existing icon to load-and-edit-in-place, or clear and hit **Create New** to append. Mode hint strip tells you which is which.
-- **Confirmation before delete** — popup prevents mis-click nukes.
-- **Global and Per-Character scope** — toggle at the top of the icon strip.
-- **Resizable** — BOTTOMRIGHT fel-green bracket doubles as the grip; chips, presets, and editor reflow.
-
-## Install
-
-- **CurseForge:** [curseforge.com/wow/addons/macro-builder](https://www.curseforge.com/wow/addons/macro-builder)
-- **Manual:** download the latest ZIP from [Releases](https://github.com/Wicks-mods/WicksMacroBuilder/releases) and extract the `WicksMacroBuilder` folder into `World of Warcraft\_classic_\Interface\AddOns\`.
-
-## Usage
-
-```
-/wsmb
-```
-
-Opens the builder. Drag the header to move, drag the BOTTOMRIGHT fel-green bracket to resize. Click chips to insert snippets at the cursor; click preset names to load a full macro body; click an icon in the right strip to load an existing macro; drag an icon from the strip onto your action bar.
-
-## Compatibility
-
-- **TBC Classic (Burning Crusade / Anniversary)** — Interface `20505`.
-
-## Brand
-
-Uses the locked Wick palette and 10px/2px fel-green L-bracket chrome. See:
-- `UI.lua` — tokens at the top of the file
-- `CHANGELOG.md` — version history
-- `logo.svg` — logomark source
-
 ## License
 
-See `LICENSE` — MIT with a trademark carve-out for the Wick name, logomark, and visual system. Full trademark policy: [WickSuite/TRADEMARK.md](https://github.com/Wicks-mods/WickSuite/blob/main/TRADEMARK.md).
+See `LICENSE`, MIT with a trademark carve-out for the Wick name, logomark, and visual system. Full trademark policy: [WickSuite/TRADEMARK.md](https://github.com/Wicks-mods/WickSuite/blob/main/TRADEMARK.md).

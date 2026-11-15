@@ -1,9 +1,14 @@
 ## Interface: 20505, 20506
-## Title: Wick's Macro Builder
-## Notes: Macro Builder for TBC Classic. Part of the Wick suite.
+## Title: |cffD4C8A1Wick's|r |cff4FC778Macro Builder|r
+## Notes: A clean macro editor. Build a macro from click-to-insert chips, pick an icon, drag it to your bars.
 ## Author: Wick
 ## Version: 0.2.3
 ## SavedVariables: WICKSMACROBUILDERDB
+## IconTexture: Interface\Icons\INV_Misc_Note_01
+## Category: Wick's Mods
+## X-Website: https://wicksmods.com
+## X-License: MIT with trademark carve-out
+## X-Curse-Project-ID: 1521208
 
 Core.lua
 Data.lua
